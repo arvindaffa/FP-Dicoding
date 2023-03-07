@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Jenis Kendaraan di Indonesia</title>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "50px 20px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+        }
+
+        function mobil() {
+            var mobil1 = document.getElementById('mobil');
+
+            if (mobil1.style.display == "block") {
+                mobil1.style.display = "none";
+            } else {
+                mobil1.style.display = "block";
+            }
+        }
+
+        function motor() {
+            var motor1 = document.getElementById('motor');
+
+            if (motor1.style.display == "block") {
+                motor1.style.display = "none";
+            } else {
+                motor1.style.display = "block";
+            }
+        }
+
+        function pesawat() {
+            var pesawat1 = document.getElementById('pesawat');
+
+            if (pesawat1.style.display == "block") {
+                pesawat1.style.display = "none";
+            } else {
+                pesawat1.style.display = "block";
+            }
+        }
+
+        function helikopter() {
+            var helikopter1 = document.getElementById('helikopter');
+
+            if (helikopter1.style.display == "block") {
+                helikopter1.style.display = "none";
+            } else {
+                helikopter1.style.display = "block";
+            }
+        }
+
+        function perahu() {
+            var perahu1 = document.getElementById('perahu');
+
+            if (perahu1.style.display == "block") {
+                perahu1.style.display = "none";
+            } else {
+                perahu1.style.display = "block";
+            }
+        }
+
+        function kapal() {
+            var kapal1 = document.getElementById('kapal');
+
+            if (kapal1.style.display == "block") {
+                kapal1.style.display = "none";
+            } else {
+                kapal1.style.display = "block";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="navbar">
+            <a href="#home" id="logo">Belajar.in</a>
+            <div id="navbar-right">
+                <a href="#darat">Darat</a>
+                <a href="#udara">Udara</a>
+                <a href="#laut">Laut</a>
+            </div>
+        </div>
+
+        <div id="home" class="jumbotron">
+            <h1>Mengenal Jenis-Jenis Kendaraan</h1>
+            <p>Saat ini, terdapat 3 jenis kendaraan. Apa sajakah itu?</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="content">
+            <article id="darat">
+                <h2>Kendaraan di Darat</h2>
+                <p>Kendaraan di darat merupakan kendaraan yang bergerak di daratan, seperti mobil, motor, kereta, dan
+                    bus.</p>
+
+                <div id="mobill" style="padding: 30px;">
+                    <p style="text-align: center; padding: 20px 0px;">Mobil</p>
+                    <img src="img/mobil.jpeg" id="gambarmobil" alt="gambar mobil">
+                    <button type="button" onclick="mobil();">Penjelasan</button>
+                    <div id="mobil" hidden style="max-width: 300px;">
+                        <p>Mobil Merupakan sebuah transportasi darat. Mobil memiliki 4 roda.</p>
+                    </div>
+                </div>
+
+                <div id="motorr" style="padding: 30px;">
+                    <p style="text-align: center; padding: 20px 0px;">Motor</p>
+                    <img src="img/motor.jpeg" id="gambarmotor" alt="gambar motor">
+                    <button type="button" onclick="motor();">Penjelasan</button>
+                    <div id="motor" hidden style="max-width: 300px;">
+                        <p>Motor Merupakan sebuah transportasi darat. Motor memiliki 2 roda.</p>
+                    </div>
+                </div>
+
+
+            </article>
+
+            <article id="udara">
+                <h2>Kendaraan di Udara</h2>
+                <p>Kendaraan di darat merupakan kendaraan yang bergerak di udara, seperti pesawat terbang dan helikopter
+                </p>
+
+                <div id="pesawatt" style="padding: 30px;">
+                    <p style="text-align: center; padding: 20px 0px;">Pesawat Terbang</p>
+                    <img src="img/pesawat.jpeg" id="gambarpesawat" alt="gambar pesawat">
+                    <button type="button" onclick="pesawat();">Penjelasan</button>
+                    <div id="pesawat" hidden style="max-width: 300px;">
+                        Pesawat Terbang merupakan sebuah transportasi yang memiliki mobilitas cepat karena melalui
+                        udara. Pada pesawat, terdapat sayap yang membuatnya dapat terbang.
+                    </div>
+                </div>
+
+                <div id="helikopterr" style="padding: 30px;">
+                    <p style="text-align: center; padding: 20px 0px;">Helikopter</p>
+                    <img src="img/heli.jpeg" id="gambarhelikopter" alt="gambar helikopter">
+                    <button type="button" onclick="helikopter();">Penjelasan</button>
+                    <div id="helikopter" hidden style="max-width: 300px;">
+                        Helikopter biasa dipakai di militer. Saat ini, helikopter bukan dijadikan sebagai transportasi
+                        umum dan sangat jarang ditemui karena harganya yang mahal
+                    </div>
+                </div>
+            </article>
+
+            <article id="laut">
+                <h2>Kendaraan di Laut</h2>
+                <p>Kendaraan di darat merupakan kendaraan yang bergerak di lautan, seperti perahu dan kapal</p>
+
+                <div id="perahuu" style="padding: 30px;">
+                    <p style="text-align: center; padding: 20px 0px;">Perahu</p>
+                    <img src="img/perahu.jpeg" id="gambarperahu" alt="gambar perahu">
+                    <button type="button" onclick="perahu();">Penjelasan</button>
+                    <div id="perahu" hidden style="max-width: 300px;">
+                        Perahu merupakan alat transportasi di air yang sudah ada sejak jaman dahulu. Perahu banyak
+                        ditemui di pantai, sungai, dan danau. Perahu merupakan cikal bakal dari kapal
+                    </div>
+                </div>
+
+                <div id="kapall" style="padding: 30px;">
+                    <p style="text-align: center; padding: 20px 0px;">Kapal</p>
+                    <img src="img/kapal.jpeg" id="gambarkapal" alt="gambar kapal">
+                    <button type="button" onclick="kapal();">Penjelasan</button>
+                    <div id="kapal" hidden style="max-width: 300px;">
+                        Kapal merupakan transportasi modern di air. Saat ini, kapal dijadikan moda transportasi umum
+                        karena dapat mengangkut banyak penumpang dan kendaraan dari motor hingga bus. 
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <aside>
+            <h1>Profil</h1>
+            <img src="img/foto-diri.jpeg" alt="Foto diri" style="width:150px; height: 200px;">
+            <div>
+                <p>Arvin Daffa Naufal</p>
+                <p>Mahasiswa</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p> Tugas Akhir Modul "Belajar Dasar Pemrograman Web" Dicoding</p>
+        <p> &#169; 2023</p>
+    </footer>
+
+</body>
+
+</html>
